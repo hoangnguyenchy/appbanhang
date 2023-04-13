@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Them.TheLoaiActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/anhgido" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/maTheLoai"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="Mã thể loại..."
+            android:textColorHint="#515151" />
+
+        <EditText
+            android:id="@+id/tenTheLoai"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Tên thể loại..."
+            android:textColorHint="#515151" />
+
+        <EditText
+            android:id="@+id/vitriTheLoai"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Vị trí..."
+            android:textColorHint="#515151" />
+
+        <EditText
+            android:id="@+id/motaTheLoai"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:layout_marginTop="10dp"
+            android:hint="Mô tả..."
+            android:textColorHint="#515151" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btthemTheLoai"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:onClick="them"
+            android:text="Thêm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btHuyTheLoai"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:onClick="HuyTheLoai"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/danhSachTheLoai"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="showtheloai"
+        android:text="Danh sách thể loại"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/viewlipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white">
+
+    </ViewFlipper>
+
+    <TableLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="50dp"
+        android:stretchColumns="1,2">
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgnguoidung"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="viewNguoidung"
+                    android:src="@drawable/nguoidung"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:id="@+id/txtnguoidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Người dùng"
+                    android:textColor="#5f5f5f" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgtheloai"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="viewTheLoai"
+                    android:src="@drawable/theloai"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:id="@+id/txttheloai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:text="Thể loại" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="76dp"
+                    android:layout_column="1"
+                    android:onClick="viewSach"
+                    android:src="@drawable/sach"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Hàng hóa"
+                    android:textColor="#5f5f5f" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_column="2"
+                    android:onClick="viewHoaDon"
+                    android:src="@drawable/hoadon"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Hóa đơn"
+                    android:textColor="#5f5f5f" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgthongke"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:onClick="viewThongKe"
+                    android:src="@drawable/thongke"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:id="@+id/txtthongke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Thông kê"
+                    android:textColor="#5f5f5f" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
